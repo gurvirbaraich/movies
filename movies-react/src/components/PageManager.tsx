@@ -24,6 +24,7 @@ export default function PageManager() {
     <div className="page-container">
       {pageRange.map((page) => (
         <div
+          // @ts-ignore: Unreachable code error
           onClick={() => setPage(page)}
           data-page-id={page}
           key={`page_manager_${page}`}

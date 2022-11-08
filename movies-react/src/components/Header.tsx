@@ -1,5 +1,6 @@
 import React from "react";
 import genres from "../assets/json/genres.json";
+// @ts-ignore: Unreachable code error
 import styles from "../assets/css/header.module.css";
 import { AppContext } from "../context/AppContextProvider";
 
