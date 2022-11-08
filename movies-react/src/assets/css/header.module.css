@@ -1,0 +1,35 @@
+.header {
+  height: 100%;
+  padding: 0.75em 50px;
+  max-height: 4em;
+  border-bottom: 1px solid #f1f1f1;
+
+  gap: 2em;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr;
+}
+
+.header > * {
+  gap: 1em;
+  display: flex;
+  max-height: 4em;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+[data-logo] {
+  height: 100%;
+  font-size: 1.75em;
+  justify-content: flex-start;
+}
+
+[data-genre] {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1616px) {
+  [data-pc] {
+    display: none;
+  }
+}
